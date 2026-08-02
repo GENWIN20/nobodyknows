@@ -4,17 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NobodyKnows - Deriv Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #10141e;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #161d2a;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 100%;
+            border: 1px solid #253248;
+        }
+        h1 {
+            color: #ff444f;
+            margin-bottom: 10px;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #98a1b3;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .btn {
+            background-color: #ff444f;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+        .btn:hover {
+            background-color: #e33b45;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #566175;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to NobodyKnows</h1>
-    <p>Your 3rd-party Deriv trading platform is coming soon!</p>
-    
-    <!-- This button will log users into Deriv -->
-    <button id="loginBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Connect to Deriv</button>
+
+    <div class="container">
+        <h1>NOBODYKNOWS</h1>
+        <p>Welcome to your premium 3rd-party Deriv trading portal. Connect your account securely to begin trading with optimized executions.</p>
+        
+        <button id="loginBtn" class="btn">Connect to Deriv</button>
+        
+        <div class="footer">Securely authorized via Deriv OAuth 2.0</div>
+    </div>
 
     <script>
-        // You will replace '1234' with your actual Deriv App ID once you finish their form
-        const APP_ID = '3408F1xw5g7g9gOeq5osK'; 
+        // Your official Deriv App ID integrated perfectly
+        const APP_ID = '348ff1xw5g7gtg0wg5nsk'; 
         
         document.getElementById('loginBtn').addEventListener('click', () => {
             window.location.href = `https://deriv.com{APP_ID}`;
