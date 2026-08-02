@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobodyKnows - Deriv Platform</title>
+</head>
+<body>
+    <h1>Welcome to NobodyKnows</h1>
+    <p>Your 3rd-party Deriv trading platform is coming soon!</p>
+    
+    <!-- This button will log users into Deriv -->
+    <button id="loginBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Connect to Deriv</button>
+
+    <script>
+        // You will replace '1234' with your actual Deriv App ID once you finish their form
+        const APP_ID = '1234'; 
+        
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            window.location.href = `https://deriv.com{APP_ID}`;
+        });
+    </script>
+</body>
+</html>
